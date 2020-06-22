@@ -1,1 +1,1 @@
-const String GET_COURSE_DATA_MOCK = "https://onedrive.live.com/?authkey=%21APH%5F4uXvqpBDHnw&cid=AB2204343BA034C7&id=AB2204343BA034C7%21336&parId=root&o=OneUp";
+const String GET_COURSE_DATA_MOCK = "https://run.mocky.io/v3/3a1ec9ff-6a95-43cf-8be7-f5daa2122a34";

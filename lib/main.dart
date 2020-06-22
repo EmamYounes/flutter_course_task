@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'base/bloc_provider.dart';
+import 'course_details/Bloc/CourseDetailsBloc.dart';
+import 'course_details/Views/CourseDetailsView.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -39,7 +43,15 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'عرض تفاصيل الكورس',
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return BlocProvider<CourseDetailsBloc>(
+                    bloc: CourseDetailsBloc(),
+                    child: CourseDetailsView(),
+                  );
+                }));
+              },
             )
           ],
         ),
