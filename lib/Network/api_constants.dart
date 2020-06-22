@@ -1,0 +1,1 @@
+const String GET_COURSE_DATA_MOCK = "https://onedrive.live.com/?authkey=%21APH%5F4uXvqpBDHnw&cid=AB2204343BA034C7&id=AB2204343BA034C7%21336&parId=root&o=OneUp";
