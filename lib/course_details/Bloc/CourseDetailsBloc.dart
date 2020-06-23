@@ -3,9 +3,11 @@ import 'package:flutter_course_task/base/api_bloc_mixin.dart';
 import 'package:flutter_course_task/base/bloc_provider.dart';
 import 'package:flutter_course_task/course_details/Model/CourseDetailsModel.dart';
 import 'package:flutter_course_task/course_details/Repo/CourseDetailsRepo.dart';
+import 'package:rxdart/rxdart.dart';
 
 class CourseDetailsBloc extends BlocBase
     with APIBlocMixin<CourseDetailsModel, ErrorModel> {
+
   Stream<CourseDetailsModel> get successResponseStream =>
       super.successSubject.map((onData) {
         return onData;
@@ -21,5 +23,6 @@ class CourseDetailsBloc extends BlocBase
   }
 
   @override
-  void dispose() {}
+  void dispose() {
+  }
 }
